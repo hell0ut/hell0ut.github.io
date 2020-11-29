@@ -48,6 +48,15 @@ background: #fa4c0c;
     font-size:220%;
 }
 
+#menuToggle{
+    display: flex;
+    width: 80%;
+}
+
+#menuToggle input{
+    display: none;
+}
+
 .footer{
     background: #62605e;
 }
@@ -190,6 +199,233 @@ form .question input:valid ~ label {
   z-index: 1;
 }
 
+
+@media screen and (max-width : 960px){
+
+    header{
+        background: #fa4c0c;
+        height: 50px;
+    }
+
+#menuToggle {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  z-index: 10;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
+#menuToggle input
+{
+  display: flex;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 11;
+}
+
+#menuToggle span
+{
+  display: flex;
+  width: 29px;
+  height: 2px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #ffffff;
+  border-radius: 3px;
+  z-index: 13;
+  transform-origin: 5px 0px;
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-3px, -1px);
+  background: #36383F;
+}
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu
+{
+    display: block;
+  position: absolute;
+  width: 180px;
+  height: 200vh;
+  box-shadow: 0 0 10px #85888C;
+  margin: -50px 0 0 -50px;
+  padding: 50px;
+  padding-top: 80px;
+  background: #fa4c0c;
+    font-size: 0.7em;
+  -webkit-font-smoothing: antialiased;
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.sub-menu{
+    visibility: visible;
+    display: block;
+    position: relative;
+    opacity: 1;
+    background: #fa4c0c;
+    font-size: 1.5em;
+    padding: 0 0;
+    padding-left: 7%;
+}
+
+.menu>li:hover .sub-menu{
+    opacity: 1;
+}
+
+#menu li
+{
+  padding: 10px 0;
+  transition-delay: 2s;
+}
+
+#menuToggle input:checked ~ ul
+{
+  transform: none;
+}
+
+
+
+header div.col-1 .logo{
+    right: 1%;
+    height: 50px;
+}
+header div.col-1 .logo img{
+    height: 100%;
+    width: auto;
+}
+
+.autorization a{
+    display: none;
+}
+
+.autorization img{
+    display: block;
+    position: absolute ;
+    right:15%;
+    z-index: 20;
+    height: 50px;
+    width: auto;
+}
+
+.auth{
+    transform: scale(0.6);
+    visibility: hidden;
+    position: absolute;
+    top: -10%;
+    left: -30%;
+    opacity: 0;
+    transition: all 1s ease-out 0s;
+    z-index: 8;
+}
+
+.content-1,.content-2{
+    display: block;
+}
+
+.content-1 div,.content-2 div{
+    width: 95%;
+    margin-left: 2%;
+}
+
+.donation-bar div {
+margin: 0 0;
+}
+
+.col-1-6{
+    width: 0%;
+}
+.col-3-6{
+    width: 66%  ;
+}
+
+.donation-text{
+    padding: 1% 0;
+
+}
+.donation-bar{
+    justify-content: flex-start;
+    max-width: 100%;
+    font-size:0.3em;
+    height: 30px;
+}
+
+.donation-bar .row .question{
+    transform: scale(0.5);
+}
+
+.footer{
+    height: 15px;
+}
+
+.footer li,a{
+    color: white;
+    text-decoration: none;
+    line-height: 1em;
+    font-size: 0.7em;
+}
+.donation-bar form .question{
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+
+.donation-bar form .question input{
+    height: 100%;
+    width: auto;
+    padding: 0;
+    margin-right: 70%;
+    margin-top: -12%;
+}
+
+.donation-bar form .question label{
+    font-size: 3em;
+    margin-top: -70%;
+}
+
+.donation-bar form .question input:focus ~ label {
+    visibility: hidden;
+    color: white;
+  -moz-transform: translate(0, -45px);
+  -ms-transform: translate(0, -45px);
+  -webkit-transform: translate(0, -45px);
+  transform: translate(0, -45px);
+}
+
+
+}
 
 
 
