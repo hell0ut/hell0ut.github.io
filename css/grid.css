@@ -140,6 +140,7 @@ header,.row,.menu,.auth,.donation-bar,.content-1,.content-2,.footer{
 }
 
 .footer{
+    margin-top: 20px;
     height: 40px;
     justify-content: space-around;
 }
