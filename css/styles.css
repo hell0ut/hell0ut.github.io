@@ -1,0 +1,198 @@
+body{
+    background-image: url("abstract_orange_wallpaper_010.jpg");
+}
+
+.menu,.sub-menu,.auth,.autorization,.donation-bar .logo{
+background: #fa4c0c;
+}
+
+.menu a{
+      color: white;
+    text-decoration: none;
+      line-height: 1.5em;
+    font-size:200%;
+
+}
+
+.sub-menu{
+  word-break: break-word;
+    opacity: 0;
+    transition: all 1s ease-out 0s;
+    z-index: 8;
+    border-radius: 15%;
+}
+
+.row li a {
+    color:yellow;
+    font-size: 1.4em;
+}
+
+.footer li,a{
+    color: white;
+    text-decoration: none;
+    line-height: 1em;
+    font-size:150%;
+}
+
+.sub-menu a{
+    color: white;
+    text-decoration: none;
+    line-height: 1.5em;
+    font-size:130%;
+}
+
+.autorization a{
+    color: white;
+    text-decoration: none;
+    line-height: 1.5em;
+    font-size:220%;
+}
+
+.footer{
+    background: #62605e;
+}
+
+.transition, form button, form .question label, form .question input[type="text"] {
+  -moz-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  -o-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  -webkit-transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+  transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
+}
+
+form {
+  position: relative;
+  display: inline-block;
+  max-width: 700px;
+  min-width: 500px;
+  box-sizing: border-box;
+  padding: 30px 25px;
+  background-color: white;
+  border-radius: 40px;
+  margin: 40px 0;
+  left: 50%;
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+form button:hover, form button:focus {
+  color: black;
+  background-color: white;
+}
+
+form .question {
+  position: relative;
+  padding: 10px 0;
+}
+
+form .question label {
+  transform-origin: left center;
+  color: #fa4c0c;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  font-size: 22px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  display: block;
+  position: absolute;
+  margin-top: -17%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+form .question input {
+  appearance: none;
+  border: 5px solid #ffdd00;
+  line-height: 0;
+  font-size: 17px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border-radius: 60px;
+  color: black;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+}
+
+form .question input:focus {
+  outline: none;
+  background: white;
+  color: black;
+  margin-top: 30px;
+}
+
+form .question input:valid {
+  margin-top: 30px;
+}
+
+form .question input:focus ~ label {
+    color: white;
+  -moz-transform: translate(0, -45px);
+  -ms-transform: translate(0, -45px);
+  -webkit-transform: translate(0, -45px);
+  transform: translate(0, -45px);
+}
+
+form .question input:valid ~ label {
+  text-transform: uppercase;
+  font-style: italic;
+  color: white;
+  -moz-transform: translate(5px, -45px) scale(0.6);
+  -ms-transform: translate(5px, -45px) scale(0.6);
+  -webkit-transform: translate(5px, -45px) scale(0.6);
+  transform: translate(5px, -45px) scale(0.6);
+}
+
+.content1-h{
+    font-size:200%;
+}
+
+.content1-text,.content2-text{
+    color: white;
+    font-size:95%;
+}
+
+.donation-bar{
+  background-image: url("carbon.jpg");
+}
+
+.donation-bar form{
+  all:unset;
+  display: flex;
+  justify-content: flex-start;
+  background: #fa4c0c;
+  min-width: 60%;
+}
+
+.donation-text {
+  color: white;
+  line-height: 1.5em;
+  font-size: 260%;
+}
+
+.donation-bar form.row button {
+  background-color: #fa4c0c;
+  border: none;
+  line-height: 0;
+  font-size: 400%;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 10% auto 0 20%;
+  border-radius: 60px;
+  color: white;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
+
+
